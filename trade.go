@@ -2,6 +2,7 @@ package bittrex
 
 // Used in getmarkethistory
 type Trade struct {
+	ID        int     `json:"Id"`
 	OrderUuid string  `json:"OrderUuid"`
 	Timestamp jTime   `json:"TimeStamp"`
 	Quantity  float64 `json:"Quantity"`
